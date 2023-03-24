@@ -91,9 +91,9 @@ const Register = () => {
         </div>
 
         <button
-          className={`bg-black w-[60vw] md:w-[40vw] lg:w-[25vw] h-[2rem] rounded-md mt-5 text-white hover:bg-white hover:text-black hover:border hover:border-black duration-500 ${
+          className={`bg-black w-[60vw] md:w-[40vw] lg:w-[25vw] h-[2rem] rounded-md mt-5 text-white duration-500 ${
             (isProcessing || !isValidEmail || !isValidPassword) &&
-            "cursor-not-allowed hover:bg-black hover:text-white opacity-50"
+            "cursor-not-allowed opacity-50"
           }`}
           disabled={isProcessing || !isValidEmail || !isValidPassword}
           onClick={register}
