@@ -28,7 +28,6 @@ const Register = () => {
 
   const register = async () => {
     if (registerPassword !== confirmPassword) {
-      console.error("Passwords do not match");
       Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -44,7 +43,6 @@ const Register = () => {
         registerPassword
       );
       navigate("/");
-      console.log(user);
     } catch (err) {
       console.error(err.message);
     } finally {
