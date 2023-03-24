@@ -4,7 +4,7 @@ import auth from "../firebase";
 import Form from "../components/Form";
 import Logo from "../assets/logo.png";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { onAuthStateChanged, signOut } from "firebase/auth";
+import { onAuthStateChanged } from "firebase/auth";
 import Swal from "sweetalert2";
 
 const Login = () => {
