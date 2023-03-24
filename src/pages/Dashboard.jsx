@@ -18,7 +18,7 @@ const Dashboard = () => {
         setIsLoggedIn(true);
       } else {
         setIsLoggedIn(false);
-        navigate("/Login");
+        navigate("/");
       }
     });
   }, []);
